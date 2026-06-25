@@ -28,8 +28,8 @@ import { call } from "@/utils/apiWrapper";
 
 // Component state
 const footerText = ref("Powered by");
-const linkText = ref("BrainWise");
-const footerLink = ref("https://nexus.brainwise.me");
+const linkText = ref("Omnilab");
+const footerLink = ref("https://nexus.omnilabes.com");
 const footerRoot = ref(null);
 const config = ref({});
 const serverValidationEnabled = ref(true);
@@ -37,7 +37,7 @@ const serverValidationEnabled = ref(true);
 // Dynamic class and style to prevent easy CSS targeting
 const componentId = Math.random().toString(36).substring(7);
 const footerClass = ref(`pos-footer-component pos-footer-component-${componentId}`);
-const brandSignature = computed(() => `BrainWise-${componentId}`);
+const brandSignature = computed(() => `Omnilab-${componentId}`);
 
 const footerStyle = computed(() => ({
 	padding: config.value._s?.p || "12px 20px",
@@ -92,11 +92,11 @@ const loadBrandingConfig = async () => {
 			}
 		}
 	} catch (error) {
-		console.error("[BrainWise] Failed to load branding config:", error);
+		console.error("[Omnilab] Failed to load branding config:", error);
 		// Use fallback values
 		footerText.value = "Powered by";
-		linkText.value = "BrainWise";
-		footerLink.value = "https://nexus.brainwise.me";
+		linkText.value = "Omnilab";
+		footerLink.value = "https://nexus.omnilabes.com";
 	}
 };
 
@@ -111,7 +111,7 @@ const validateWithServer = async () => {
 			brand_url: footerLink.value,
 		});
 	} catch (error) {
-		console.error("[BrainWise] Server validation failed:", error);
+		console.error("[Omnilab] Server validation failed:", error);
 	}
 };
 
@@ -134,15 +134,15 @@ const logClientEvent = async (eventType, details = {}) => {
 			}),
 		});
 	} catch (error) {
-		console.error("[BrainWise] Failed to log event:", error);
+		console.error("[Omnilab] Failed to log event:", error);
 	}
 };
 
 const ensureBranding = () => {
 	if (!footerRoot.value) return;
 
-	const expectedBrand = atob(config.value._l || btoa("BrainWise"));
-	const expectedUrl = atob(config.value._u || btoa("https://nexus.brainwise.me"));
+	const expectedBrand = atob(config.value._l || btoa("Omnilab"));
+	const expectedUrl = atob(config.value._u || btoa("https://nexus.omnilabes.com"));
 	const expectedText = atob(config.value._t || btoa("Powered by"));
 
 	// Check if values have been tampered

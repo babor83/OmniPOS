@@ -1,8 +1,10 @@
-# POS Next
+# omniPOS
+
+*Note: omniPOS is a fork of the original POS Next application.*
 
 <div align="center">
 
-![POS Next Banner](docs/screenshots/01-main-dashboard.png)
+![omniPOS Banner](docs/screenshots/01-main-dashboard.png)
 
 **A modern, lightning-fast Point of Sale system for ERPNext**
 
@@ -20,16 +22,16 @@
 
 | Branch | Stability | Purpose |
 |--------|-----------|---------|
-| [`version-15`](https://github.com/BrainWise-DEV/POSNext/tree/version-15) | **Stable** | Production-ready release for Frappe/ERPNext v15 |
-| [`develop`](https://github.com/BrainWise-DEV/POSNext/tree/develop) | **Unstable** | Active development — may contain breaking changes |
+| [`version-15`](https://github.com/Omnilab-DEV/POSNext/tree/version-15) | **Stable** | Production-ready release for Frappe/ERPNext v15 |
+| [`develop`](https://github.com/Omnilab-DEV/POSNext/tree/develop) | **Unstable** | Active development — may contain breaking changes |
 
 > For production use, always install from the `version-15` branch.
 
 ---
 
-## 🎯 Why POS Next?
+## 🎯 Why omniPOS?
 
-POS Next is a **complete rewrite** of the ERPNext POS system, built from the ground up with modern technologies to deliver:
+omniPOS is a **complete rewrite** of the ERPNext POS system, built from the ground up with modern technologies to deliver:
 
 - ⚡ **Blazing Fast Performance** - Vue 3 + Vite for instant load times
 - 🔄 **True Offline Support** - Keep selling even when your internet drops
@@ -46,11 +48,11 @@ POS Next is a **complete rewrite** of the ERPNext POS system, built from the gro
 
 ## 📞 Support & Community
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/BrainWise-DEV/pos_next/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/BrainWise-DEV/pos_next/discussions)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/Omnilab-DEV/pos_next/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Omnilab-DEV/pos_next/discussions)
 - 📖 **Forum**: [Frappe Community](https://discuss.frappe.io/)
 - 📱 **Telegram Group**: [Join our community](https://t.me/+J2WHnNKCn8ZhOWQ0) - Get help, share ideas, and connect with other users
-- 📧 **Email**: support@brainwise.me
+- 📧 **Email**: support@omnilabes.com
 
 ### Key Features
 
@@ -176,7 +178,7 @@ POS Next is a **complete rewrite** of the ERPNext POS system, built from the gro
 cd ~/frappe-bench
 
 # Get the app from GitHub
-bench get-app https://github.com/BrainWise-DEV/pos_next.git --branch version-15
+bench get-app https://github.com/Omnilab-DEV/pos_next.git --branch version-15
 
 # Install on your site
 bench --site [your-site-name] install-app pos_next
@@ -211,7 +213,7 @@ bench start
 
 ## 🔄 Updating
 
-Already have POS Next? Update to the latest version:
+Already have omniPOS? Update to the latest version:
 
 ```bash
 cd ~/frappe-bench/apps/pos_next
@@ -254,8 +256,8 @@ Visit: `https://your-site.com/pos` or `http://localhost:8000/pos`
 
 ### Optional: Create Promotional Offers
 
-**POS Offer**: `POS Next > POS Offer > New`
-**POS Coupon**: `POS Next > POS Coupon > New`
+**POS Offer**: `omniPOS > POS Offer > New`
+**POS Coupon**: `omniPOS > POS Coupon > New`
 
 ## ⌨️ Keyboard Shortcuts
 
@@ -271,7 +273,7 @@ Visit: `https://your-site.com/pos` or `http://localhost:8000/pos`
 
 ### Offline Mode
 
-Never lose a sale! POS Next works seamlessly even without internet:
+Never lose a sale! omniPOS works seamlessly even without internet:
 - All item data cached locally
 - Stock levels synced in background
 - Invoices saved and uploaded when online
@@ -501,10 +503,10 @@ Coming soon:
 
 <div align="center">
 
-**Made with ❤️ by [BrainWise](https://nexus.brainwise.me)**
+**Made with ❤️ by [Omnilab](https://nexus.omnilabes.com)**
 
 ⭐ Star us on GitHub — it motivates us a lot!
 
-[Report Bug](https://github.com/BrainWise-DEV/pos_next/issues) • [Request Feature](https://github.com/BrainWise-DEV/pos_next/issues) • [Documentation](https://github.com/BrainWise-DEV/pos_next/wiki)
+[Report Bug](https://github.com/Omnilab-DEV/pos_next/issues) • [Request Feature](https://github.com/Omnilab-DEV/pos_next/issues) • [Documentation](https://github.com/Omnilab-DEV/pos_next/wiki)
 
 </div>
